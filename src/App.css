@@ -1,38 +1,209 @@
-.App {
+.step1 {
+  height: 100vh;
+  background: url("../public/p1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.next-button {
+  background-color: #2ce790;
+  border: 0px;
+  border-radius: 40px;
+  color: white;
+  font-size: 20px;
   text-align: center;
+  padding: 10px;
+  position: absolute;
+  box-shadow: 2px 2px 6px gray;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.step-1 {
+  width: 150px;
+  bottom: 80px;
+  left: 100px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.step-2 {
+  width: 200px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.step2 {
+  height: 100vh;
+  background: url("../public/p2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.green {
+  background-color: #25db9e;
+  bottom: 200px;
+  left: 100px;
+}
+.red {
+  background-color: #db4f25;
+  bottom: 140px;
+  left: 100px;
+}
+.step-3 {
+  width: 300px;
+}
+.disagree {
+  height: 20px;
+  width: auto;
+  transform: rotate(180deg);
+}
+.agree {
+  height: 20px;
+  width: auto;
+}
+.step3 {
+  height: 100vh;
+  background: url("../public/p3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.dialogue {
+  background: url("./Union\ 36.png");
+  height: 260px;
+  width: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.profile {
+  height: 170px;
+  width: auto;
+}
+.tip {
+  display: flex;
+  direction: rtl;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+}
+.paragraph {
+  margin-right: 50px;
+  padding: 20px;
+}
+.step4 {
+  height: 100vh;
+  background: url("../public/p4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.step-4 {
+  width: 150px;
+  bottom: 80px;
+  right: 100px;
+}
+.step5 {
+  height: 100vh;
+  background: url("../public/p5.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.step-5 {
+  width: 150px;
+  left: 30%;
+}
+.step6 {
+  height: 100vh;
+  background: url("../public/p6.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.step-6 {
+  width: 150px;
+  bottom: 80px;
+  left: 100px;
+}
+.step7 {
+  height: 100vh;
+  background: url("../public/p7.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.step-7 {
+  width: 320px;
+  left: 200px;
+}
+.step8 {
+  height: 100vh;
+  background: url("../public/p8.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.step-8 {
+  width: 250px;
+  left: 200px;
+}
+.step9 {
+  height: 100vh;
+  background: url("../public/p9.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.step-9 {
+  width: 250px;
+  left: 200px;
+  bottom: 300px;
+}
+.step-9.red {
+  bottom: 240px;
+}
+.step-9.green {
+  bottom: 300px;
+}
+.step10 {
+  height: 100vh;
+  background: url("../public/p10.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  align-items: center;
+}
+.form {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  direction: rtl;
+  bottom: 100px;
+  right: 150px;
+  
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.field {
+  width: 300px;
+  border: 0;
+  border-radius: 50px;
+  height: 30px;
+  margin: 10px;
+}
+.login-image {
+  width: 400px;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+}
+.login {
+  position: absolute;
+}
+.submit {
+  width: 200px;
+  background-color: #2ce790;
+  border: 0px;
+  border-radius: 40px;
   color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 2px 2px 6px gray;
+  align-self: center;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.lable {
+  font-size: 14px;
+  height: 20px;
+  margin: 10px;
 }
