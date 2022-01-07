@@ -6,16 +6,32 @@ import "./App.css";
 import like from "./images.png";
 import profile from "./Intersection 3.png";
 import formImage from "./form.png";
-// var gapi = require("gapi");
+var gapi = require("gapi");
 
-// const SHEETS_ID = '1zNiNJMWEgsRBRCIIHS7fJ0DR93nJzRYnKpHWyeQ7pko';
-// const CLIENT_ID =
-//   '469988665626-u9457qcookqk0o6v8ld2j0q59o1rl1b6.apps.googleusercontent.com';
-// const APY_KEY = '1zNiNJMWEgsRBRCIIHS7fJ0DR93nJzRYnKpHWyeQ7pko';
-// const SCOPE = '';
+const SHEETS_ID = '1zNiNJMWEgsRBRCIIHS7fJ0DR93nJzRYnKpHWyeQ7pko';
+const CLIENT_ID =
+  '469988665626-u9457qcookqk0o6v8ld2j0q59o1rl1b6.apps.googleusercontent.com';
+const APY_KEY = '1zNiNJMWEgsRBRCIIHS7fJ0DR93nJzRYnKpHWyeQ7pko';
+const SCOPE = '';
 
 function App() {
   const [step, setstep] = useState(0);
+  
+  handleClientLoad =()=> { //initialize the Google API
+    gapi.load('client:auth2', this.initClient);
+  }
+
+  initClient =()=> { //provide the authentication credentials you set up in the Google developer console
+    gapi.client.init({
+      'apiKey': API_KEY,
+      'clientId': CLIENT_ID,
+      'scope': SCOPE,
+      'discoveryDocs': ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
+    }).then(()=> {
+      gapi.auth2.getAuthInstance().isSignedIn.listen(this.updateSignInStatus); //add a function called `updateSignInStatus` if you want to do something once a user is logged in with Google
+      this.updateSignInStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
+    });
+  }
 
   if (step === 0) {
     console.log("object");
@@ -177,34 +193,34 @@ function App() {
             
             
             
-            onSubmit={async (values) => {
-              await new Promise((r) => setTimeout(r, 500));
-              alert(JSON.stringify(values, null, 2));
-            }}
-            // onSubmit={(values) => {
-            //   const params = {
-            //     sheetsId: SHEETS_ID,
-            //     range: "Sheet1",
-            //     valueInputOption: "RAW",
-            //     insertDataOption: "INSERT_ROWS",
-            //   };
-            //   const valueRangeBody = {
-            //     majorDemension: "ROWS",
-            //     values: [values],
-            //   };
-            //   let request = gapi.client.sheets.spreadsheets.values.append(
-            //     params,
-            //     valueRangeBody
-            //   );
-            //   request.then(
-            //     (response) => {
-            //       console.log("response:", response.result);
-            //     },
-            //     (reason) => {
-            //       console.error("error:", reason.result.error.message);
-            //     }
-            //   );
+            // onSubmit={async (values) => {
+            //   await new Promise((r) => setTimeout(r, 500));
+            //   alert(JSON.stringify(values, null, 2));
             // }}
+            onSubmit={(values) => {
+              const params = {
+                sheetsId: SHEETS_ID,
+                range: "Sheet1",
+                valueInputOption: "RAW",
+                insertDataOption: "INSERT_ROWS",
+              };
+              const valueRangeBody = {
+                majorDemension: "ROWS",
+                values: [values],
+              };
+              let request = gapi.client.sheets.spreadsheets.values.append(
+                params,
+                valueRangeBody
+              );
+              request.then(
+                (response) => {
+                  console.log("response:", response.result);
+                },
+                (reason) => {
+                  console.error("error:", reason.result.error.message);
+                }
+              );
+            }}
           >
             <Form className="login-form">
               <label className="lable" htmlFor="name">
