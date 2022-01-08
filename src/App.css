@@ -1,33 +1,45 @@
-.step1 {
+@font-face {
+  font-family: Dubai;
+  src: url("../public/font/DUBAI-MEDIUM_p30download.com.TTF");
+}
+@font-face {
+  font-family: sepahbod;
+  src: url("../public/font/sepahbod.otf") format("opentype");
+}
+body{
+  font-family: Dubai;
+}
+.form-title{
+  font-family: sepadbod;
+}
+.step-1 {
   height: 100vh;
+  width: auto;
   background: url("../public/p1.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: left;
+  background-color: #e8e8e8;
 }
 .next-button {
   background-color: #2ce790;
   border: 0px;
   border-radius: 40px;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
-  padding: 10px;
+  padding: 5px;
   position: absolute;
   box-shadow: 2px 2px 6px gray;
 }
-.step-1 {
-  width: 150px;
-  bottom: 80px;
-  left: 100px;
+.disagree {
+  height: 20px;
+  width: auto;
+  transform: rotate(180deg);
 }
-.step-2 {
-  width: 200px;
-}
-.step2 {
-  height: 100vh;
-  background: url("../public/p2.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+.agree {
+  height: 20px;
+  width: auto;
 }
 .green {
   background-color: #25db9e;
@@ -39,30 +51,56 @@
   bottom: 140px;
   left: 100px;
 }
+.step-1 .next-button {
+  min-width: 150px;
+  bottom: 80px;
+  left: 100px;
+}
+.step-2 .next-button {
+  min-width: 200px;
+}
+.step-2 {
+  height: 100vh;
+  background: url("../public/p2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #e8e8e8;
+  background-position: right;
+}
+
+.step-3 .next-button {
+  min-width: 300px;
+}
+
 .step-3 {
-  width: 300px;
-}
-.disagree {
-  height: 20px;
-  width: auto;
-  transform: rotate(180deg);
-}
-.agree {
-  height: 20px;
-  width: auto;
-}
-.step3 {
   height: 100vh;
   background: url("../public/p3.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: right;
+  background-color: #e8e8e8;
 }
 .dialogue {
   background: url("./Union\ 36.png");
   height: 260px;
   width: 600px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+}
+.dialogue2 {
+  display: flex;
+  flex-direction: column;
+  background: url("./Union\ 38.png");
+  height: 460px;
+  width: 600px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.video{
+  display: flex;
+  align-self: center;
+  justify-self:center;
+  left: 3px;
 }
 .profile {
   height: 170px;
@@ -79,86 +117,100 @@
   margin-right: 50px;
   padding: 20px;
 }
-.step4 {
+.step-4 {
   height: 100vh;
   background: url("../public/p4.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-color: #e8e8e8;
 }
-.step-4 {
-  width: 150px;
+.step-4 .next-button {
+  min-width: 150px;
   bottom: 80px;
   right: 100px;
 }
-.step5 {
+.step-5 {
   height: 100vh;
   background: url("../public/p5.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-color: #e8e8e8;
 }
-.step-5 {
-  width: 150px;
+.step-5 .next-button{
+  min-width: 150px;
   left: 30%;
 }
-.step6 {
+.step-5 .red{
+  bottom: 14vh;
+}
+.step-5 .green{
+  bottom: 5vh;
+}
+.step-6 {
   height: 100vh;
   background: url("../public/p6.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-color: #e8e8e8;
 }
-.step-6 {
-  width: 150px;
+.step-6 .next-button {
+  min-width: 150px;
   bottom: 80px;
   left: 100px;
 }
-.step7 {
+.step-7 {
   height: 100vh;
   background: url("../public/p7.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
-.step-7 {
-  width: 320px;
+.step-7 .next-button {
+  min-width: 320px;
   left: 200px;
 }
-.step8 {
+.step-8 {
   height: 100vh;
   background: url("../public/p8.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-color: #e8e8e8;
 }
-.step-8 {
-  width: 250px;
+.step-8 .next-button {
+  min-width: 250px;
   left: 200px;
 }
-.step9 {
+.step-9 {
   height: 100vh;
   background: url("../public/p9.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-color: #e8e8e8;
+  background-position: right;
 }
-.step-9 {
-  width: 250px;
+.step-9 .next-button {
+  min-width: 250px;
   left: 200px;
   bottom: 300px;
 }
-.step-9.red {
+.step-9 .red {
   bottom: 240px;
 }
-.step-9.green {
+.step-9 .green {
   bottom: 300px;
 }
-.step10 {
+.step-10 {
   height: 100vh;
   background: url("../public/p10.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-color: #e8e8e8;
   position: relative;
   align-items: center;
+  color: white;
 }
 .form {
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   position: absolute;
   bottom: 0;
   display: flex;
@@ -191,12 +243,12 @@
   position: absolute;
 }
 .submit {
-  width: 200px;
+  min-width: 200px;
   background-color: #2ce790;
   border: 0px;
   border-radius: 40px;
   color: white;
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
   padding: 10px;
   box-shadow: 2px 2px 6px gray;
@@ -205,5 +257,32 @@
 .lable {
   font-size: 14px;
   height: 20px;
-  margin: 10px;
+  margin: 8px;
+  
+}
+input{
+  padding: 5px;
+  font-family: Dubai;
+}
+button{
+  font-family: Dubai;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+p{
+  font-size: 20px;
+}
+.instagram{
+  display: flex;
+  direction: ltr;
+  float: left;
+  align-items: center;
+  height: 40px;
+  margin-left: 25px;
+}
+.insta-image{
+  height: 25px;
+  width: auto;
 }
