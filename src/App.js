@@ -1,13 +1,13 @@
 import React from "react";
 import { useState } from "react";
 import { Formik, Field, Form } from "formik";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 import ReactPlayer from "react-player/lazy";
+import * as Yup from "yup";
 import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
 import like from "./images.png";
 import profile from "./Intersection 3.png";
-import formImage from "./form.png";
 import insta from "./instagram.png";
 import axios from "axios";
 let array = [];
@@ -27,9 +27,38 @@ function App() {
     array.push(0);
   };
 
-  const notify = () => {
+  const validateName = (value) => {
+    let error;
+    if (!value) {
+      error = "الزامی";
+    }
+    return error;
+  };
+
+  const success = () => {
     toast("اطلاعات شما با موفقیت دریافت شد");
   };
+  // const fail = () => {
+  //   toast("اطلاعات شما کامل نیست");
+  // };
+  // const notify = (validationSchema) =>{
+  //   if(validationSchema){
+  //     success();
+  //   }
+  //   else fail();
+  // }
+
+  const FormSchema = Yup.object().shape({
+    name: Yup.string()
+      .min(2, "!نام خیلی کوتاه است")
+      .max(50, "!نام خیلی بلند است")
+      .required("الزامی"),
+    email: Yup.string().email("ایمیل نامعتبر").required("الزامی"),
+    phoneNumber: Yup.string()
+      .min(10, "شماره تلفن اشتباه است")
+      .max(11, "شماره تلفن اشتباه است")
+      .required("الزامی"),
+  });
 
   if (step === 0) {
     console.log("object");
@@ -265,8 +294,9 @@ function App() {
   if (step === 9) {
     return (
       <div className="step-10">
-        <img className="login-image" src={formImage} alt="" />
+        {/* <img className="login-image" src={formImage} alt="" /> */}
         <div className="form">
+          <div className="form-body">
           <h3 className="form-title">
             ما خیلی زود میایم <br></br>ثبت نام کن تا تو افتتاحیه دعوتت کنیم
           </h3>
@@ -277,6 +307,7 @@ function App() {
               email: "",
               phoneNumber: "",
             }}
+            validationSchema={FormSchema}
             onSubmit={(values) => {
               setName(values.name);
               setMail(values.email);
@@ -296,42 +327,52 @@ function App() {
                 });
             }}
           >
-            <Form className="login-form">
-              <label className="lable" htmlFor="name">
-                نام و نام خانوادگی
-              </label>
-              <Field
-                className="field"
-                id="name"
-                name="name"
-                placeholder="نام و نام خانوادگی"
-              />
-
-              <label className="lable" htmlFor="email">
-                ایمیل
-              </label>
-              <Field
-                className="field"
-                id="email"
-                name="email"
-                placeholder="jane@acme.com"
-                type="email"
-              />
-
-              <label className="lable" htmlFor="phoneNumber">
-                شماره تلفن
-              </label>
-              <Field
-                className="field"
-                id="phoneNumber"
-                name="phoneNumber"
-                placeholder="شماره تلفن"
-              />
-              <button className="submit" onClick={notify} type="submit">
-                ثبت نام
-              </button>
-            </Form>
+            {({ errors, touched }) => (
+              <Form className="login-form">
+                <label className="label" htmlFor="name">
+                  نام و نام خانوادگی
+                </label>
+                <Field
+                  className="field"
+                  id="name"
+                  name="name"
+                  placeholder="نام و نام خانوادگی"
+                />
+                {/* {errors.name && touched.name && (
+                  <div className="required">{errors.name}</div>
+                )} */}
+                <label className="label" htmlFor="email">
+                  ایمیل
+                </label>
+                <Field
+                  className="field"
+                  id="email"
+                  name="email"
+                  placeholder="jane@acme.com"
+                  type="email"
+                />
+                {/* {errors.email && touched.email && (
+                  <div className="required">{errors.email}</div>
+                )} */}
+                <label className="label" htmlFor="phoneNumber">
+                  شماره تلفن
+                </label>
+                <Field
+                  className="field"
+                  id="phoneNumber"
+                  name="phoneNumber"
+                  placeholder="شماره تلفن"
+                />
+                {/* {errors.phoneNumber && touched.phoneNumber && (
+                  <div className="required">{errors.phoneNumber}</div>
+                )} */}
+                <button className="submit" onClick={success} type="submit">
+                  ثبت نام
+                </button>
+              </Form>
+            )}
           </Formik>
+          </div>
         </div>
       </div>
     );
