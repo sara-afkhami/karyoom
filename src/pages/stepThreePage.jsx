@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import like from "../assets/images/icon/like.png";
 
 export default class StepThreePage extends React.Component {
   render() {
@@ -14,7 +15,7 @@ export default class StepThreePage extends React.Component {
               بیارید چیه؟ همین الان هم میتونید از طریق پیج اینستاگراممون در
               دایرکت . ...درخواست بدید و این روند رو به صورت کاملا رایگان انجام
               بدید
-              <br></br>
+              <br/>
               <a
                 className="instagram"
                 href="https://www.instagram.com/kariumia/"

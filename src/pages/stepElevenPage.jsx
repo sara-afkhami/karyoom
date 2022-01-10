@@ -16,7 +16,7 @@ function StepElevenPage() {
       <div className="form">
         <div className="form-body">
           <h3 className="form-title">
-            ما خیلی زود میایم <br></br>ثبت نام کن تا تو افتتاحیه دعوتت کنیم
+            ما خیلی زود میایم <br/>ثبت نام کن تا تو افتتاحیه دعوتت کنیم
           </h3>
           <Formik
             className="login"

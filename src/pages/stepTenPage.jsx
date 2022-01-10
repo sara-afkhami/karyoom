@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import like from "../assets/images/icon/like.png";
 
 export default class StepTenPage extends React.Component {
   render() {
