@@ -11,15 +11,19 @@ const success = () => {
   toast("اطلاعات شما با موفقیت دریافت شد");
 };
 
+
 function StepElevenPage() {
   const [name, setName] = useState("");
   const [email, setMail] = useState("");
   const [phone, setPhone] = useState("");
   const [status, setStatus] = useState();
+  const [showForm, setShowForm] = React.useState(true);
+  const hideForm = () => setShowForm(false);
+
   return (
     <div className="step-11 page">
       {/* <img className="login-image" src={formImage} alt="" /> */}
-      <div className="form">
+      { showForm ?<div className="form">
         <div className="form-body">
           <h3 className="form-title">
             ما خیلی زود میایم <br/>ثبت نام کن تا تو افتتاحیه دعوتت کنیم
@@ -46,6 +50,7 @@ function StepElevenPage() {
                   object
                 )
                 .then((response) => {
+                  hideForm()
                   console.log("--->>> " + response);
                 });
             }}
@@ -96,7 +101,7 @@ function StepElevenPage() {
             )}
           </Formik>
         </div>
-      </div>
+      </div>: null}
     </div>
   );
 }
