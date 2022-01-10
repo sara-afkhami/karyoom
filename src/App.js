@@ -7,6 +7,8 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 import "./pageTransitions/slideTransition.scss";
 import StepOnePage from "./pages/stepOnePage";
 import StepTwoPage from "./pages/stepTwoPage";
+import StepThreePage from "./pages/stepThreePage";
+import StepFourPage from "./pages/stepFourPage";
 
 class App extends Component {
 constructor(props) {
@@ -51,7 +53,8 @@ getPathDepth(location) {
   <Switch location={location}>
     <Route path="/" exact component={StepOnePage} />
     <Route path="/step2" exact component={StepTwoPage} />
-
+    <Route path="/step3" exact component={StepThreePage}/>
+    <Route path="/step4" exact component={StepFourPage}/>
   </Switch>
 </div>
         </CSSTransition>
