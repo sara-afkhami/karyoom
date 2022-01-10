@@ -66,21 +66,20 @@
 
 /* Custom Setting */
 .dialogue {
-  background: url("./Union\ 36.png");
   height: 260px;
   width: 600px;
-  background-repeat: no-repeat;
+  background: url("assets/images/dialog1.png") no-repeat;
   background-size: contain;
 }
 .dialogue2 {
   display: flex;
   flex-direction: column;
-  background: url("./Union\ 38.png");
   height: 460px;
   width: 600px;
-  background-repeat: no-repeat;
+  background: url("assets/images/dialog2.png") no-repeat;
   background-size: contain;
 }
+
 .video {
   display: flex;
   align-self: center;
@@ -273,7 +272,7 @@ p {
 .step-11 {
   height: 100vh;
   background: #e8e8e8 url("../public/p10.png") no-repeat;
-  background-size: 100%; 
+  background-size: 100%;
   position: relative;
   align-items: center;
   color: white;
