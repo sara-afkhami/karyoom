@@ -34,10 +34,11 @@
 }
 .next-button {
   background-color: #2ce790;
-  border: 0px;
+  border: 0;
   border-radius: 40px;
   color: white;
-  font-size: 18px;
+  font-size: 24px;
+  font-weight: bold;
   text-align: center;
   padding: 5px;
   position: absolute;
@@ -47,10 +48,15 @@
 }
 .disagree {
   height: 20px;
+  margin-right: 8px;
+  margin-left: 8px;
   width: auto;
   transform: rotate(180deg);
 }
 .agree {
+
+  margin-right: 8px;
+  margin-left: 8px;
   height: 20px;
   width: auto;
 }
@@ -85,7 +91,7 @@
   display: flex;
   align-self: center;
   justify-self: center;
-  left: 3px;
+  left: 4px;
 }
 .profile {
   height: 170px;
@@ -135,6 +141,7 @@
   margin-bottom: 8px;
 }
 .submit {
+  cursor: pointer;
   margin-top: 8px;
   margin-bottom: 24px;
   min-width: 200px;

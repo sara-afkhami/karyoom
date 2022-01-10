@@ -7,11 +7,11 @@ export default class StepTwoPage extends React.Component {
         return (
             <div className="step-2 page">
                 <Link to="/step3">
-                    <button className="next-button green">
+                    <button className="next-button green" style={{width: "320px"}}>
                         <img className="agree" src={like} alt=" "/>
                         موافقم
                     </button>
-                    <button className="next-button red">
+                    <button className="next-button red"  style={{width: "320px"}}>
                         {" "}
                         <img className="disagree" src={like} alt=" "/>
                         مخالفم، دقیق میدونم

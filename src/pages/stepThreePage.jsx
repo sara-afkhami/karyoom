@@ -29,13 +29,13 @@ export default class StepThreePage extends React.Component {
           </div>
         </div>
         <Link to="/step4">
-        <button className="next-button green">
+        <button className="next-button green"  style={{width: "400px"}}>
           <img className="agree" src={like} alt=" " />
           این خیلی میتونه کمک کنه
         </button>
         </Link>
         <Link to="/step4">
-        <button className="next-button red">
+        <button className="next-button red"  style={{width: "400px"}}>
           {" "}
           <img className="disagree" src={like} alt=" " />
           مخالفم، من خودمو بهتر میشناسم

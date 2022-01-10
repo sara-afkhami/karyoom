@@ -29,13 +29,13 @@ export default class StepFivePage extends React.Component {
           </div>
         </div>
         <Link to="/step6">
-        <button className="next-button green">
+        <button className="next-button green"  style={{width: "300px"}}>
           <img className="agree" src={like} alt=" " />
           خیلی خوب بود
         </button>
         </Link>
         <Link to="/step6">
-        <button className="next-button red">
+        <button className="next-button red"  style={{width: "300px"}}>
           {" "}
           <img className="disagree" src={like} alt=" " />
           دوسش نداشتم
