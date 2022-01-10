@@ -1,5 +1,11 @@
 import React from "react";
 import { useState } from "react";
+import { Formik, Field, Form } from "formik";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import axios from "axios";
+let array = [];
+toast.configure();
 
 const success = () => {
   toast("اطلاعات شما با موفقیت دریافت شد");
@@ -25,7 +31,6 @@ function StepElevenPage() {
               email: "",
               phoneNumber: "",
             }}
-            validationSchema={FormSchema}
             onSubmit={(values) => {
               setName(values.name);
               setMail(values.email);

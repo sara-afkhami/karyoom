@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import like from "../assets/images/icon/like.png";
+import profile from "../assets/images/icon/profile.png";
+import instagram from "../assets/images/icon/instagram.png";
 
 export default class StepThreePage extends React.Component {
   render() {
@@ -20,7 +22,7 @@ export default class StepThreePage extends React.Component {
                 className="instagram"
                 href="https://www.instagram.com/kariumia/"
               >
-                <img className="insta-image" src={insta} alt="" />
+                <img className="insta-image" src={instagram} alt="" />
                 kariumia
               </a>
             </p>

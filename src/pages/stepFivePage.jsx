@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ReactPlayer from "react-player/lazy";
+import like from "../assets/images/icon/like.png";
+import profile from "../assets/images/icon/profile.png";
 
 export default class StepFivePage extends React.Component {
   render() {
