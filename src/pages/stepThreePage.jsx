@@ -7,7 +7,7 @@ import instagram from "../assets/images/icon/instagram.png";
 export default class StepThreePage extends React.Component {
   render() {
     return (
-      <div className="step-3">
+      <div className="step-3 page">
         <div className="tip">
           <img className="profile" src={profile} alt=" " />
           <div className="dialogue">

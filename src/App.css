@@ -43,6 +43,7 @@
   position: absolute;
   box-shadow: 2px 2px 6px gray;
   font-family: Dubai;
+  cursor: pointer;
 }
 .disagree {
   height: 20px;
@@ -104,7 +105,7 @@
 .form {
   width: 320px;
   height: 420px;
-  background-image: url("./form.png");
+  background-image: url("assets/images/form.png");
   background-repeat: no-repeat;
   background-size: contain;
   direction: rtl;
@@ -197,12 +198,12 @@ p {
 }
 .step-3 {
   height: 100vh;
-  background: #e8e8e8 url("../public/p3.png") no-repeat right;
+  background: #e8e8e8 url("assets/images/stepThreeBackground.png") no-repeat right;
   background-size: 100%;
 }
 .step-4 {
   height: 100vh;
-  background: #e8e8e8 url("../public/p4.png") no-repeat;
+  background: #e8e8e8 url("assets/images/stepFourBackground.png") no-repeat;
   background-size: 100%;
 }
 .step-4 .next-button {
@@ -212,7 +213,7 @@ p {
 }
 .step-5 {
   height: 100vh;
-  background:#e8e8e8 url("../public/p5.png") no-repeat;
+  background:#e8e8e8 url("assets/images/stepFiveBackground.png") no-repeat;
   background-size: 100%;
 }
 .step-5 .next-button {
@@ -227,7 +228,7 @@ p {
 }
 .step-7 {
   height: 100vh;
-  background: #e8e8e8 url("../public/p6.png") no-repeat;
+  background: #e8e8e8 url("assets/images/stepSixBackground.png") no-repeat;
   background-size: 100%;
 }
 .step-7 .next-button {
@@ -237,7 +238,7 @@ p {
 }
 .step-8 {
   height: 100vh;
-  background: #e8e8e8 url("../public/p7.png") no-repeat;
+  background: #e8e8e8 url("assets/images/stepSevenBackground.png") no-repeat;
   background-size: 100%;
 }
 .step-8 .next-button {
@@ -246,7 +247,7 @@ p {
 }
 .step-9 {
   height: 100vh;
-  background:#e8e8e8 url("../public/p8.png") no-repeat;
+  background:#e8e8e8 url("assets/images/stepEightBackground.png") no-repeat;
   background-size: 100%;
 }
 .step-9 .next-button {
@@ -255,7 +256,7 @@ p {
 }
 .step-10 {
   height: 100vh;
-  background: #e8e8e8 url("../public/p9.png") no-repeat right;
+  background: #e8e8e8 url("assets/images/stepNineBackground.png") no-repeat right;
   background-size: 100%;
 }
 .step-10 .next-button {
@@ -271,7 +272,7 @@ p {
 }
 .step-11 {
   height: 100vh;
-  background: #e8e8e8 url("../public/p10.png") no-repeat;
+  background: #e8e8e8 url("assets/images/stepTenBackground.png") no-repeat;
   background-size: 100%;
   position: relative;
   align-items: center;

@@ -7,7 +7,7 @@ import profile from "../assets/images/icon/profile.png";
 export default class StepFivePage extends React.Component {
   render() {
     return (
-      <div className="step-5">
+      <div className="step-5 page">
         <div className="tip">
           <img className="profile" src={profile} alt=" " />
           <div className="dialogue2">

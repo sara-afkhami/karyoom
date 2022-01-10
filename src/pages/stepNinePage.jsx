@@ -5,7 +5,7 @@ import like from "../assets/images/icon/like.png";
 export default class StepNinePage extends React.Component {
   render() {
     return (
-      <div className="step-9">
+      <div className="step-9 page">
         <Link to="/step10">
         <button className="next-button green">
           <img className="agree" src={like} alt=" " />

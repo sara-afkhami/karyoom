@@ -17,7 +17,7 @@ function StepElevenPage() {
   const [phone, setPhone] = useState("");
   const [status, setStatus] = useState();
   return (
-    <div className="step-11">
+    <div className="step-11 page">
       {/* <img className="login-image" src={formImage} alt="" /> */}
       <div className="form">
         <div className="form-body">
