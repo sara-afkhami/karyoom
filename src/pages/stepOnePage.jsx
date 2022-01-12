@@ -6,7 +6,7 @@ export default class StepOnePage extends React.Component {
         return (
             <div className="step-1 page">
                 <Link to="/step2">
-                    <button className="next-button"  style={{width: "200px"}}>
+                    <button className="next-button">
                         !حرکت
                     </button>
                 </Link>

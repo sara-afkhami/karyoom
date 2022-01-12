@@ -1,287 +1,398 @@
 @font-face {
-  font-family: Dubai;
-  src: url("assets/fonts/DUBAI-MEDIUM_p30download.com.TTF");
+    font-family: Dubai;
+    src: url("assets/fonts/DUBAI-MEDIUM_p30download.com.TTF");
 }
 
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 /* PAGES */
 .page-container {
-  width: 100%;
-  height: 100%;
-  font-family: Oxygen, sans-serif;
+    width: 100%;
+    height: 100%;
+    font-family: Oxygen, sans-serif;
 }
 
 .inner-container {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
 
 /* Button */
 .btn {
-  border: 0;
-  border-radius: 3px;
-  padding: 5px;
-  font-size: 11px;
-  background-color: #3498db;
-  color: #fff;
-  box-shadow: 0 0 13px 2px rgba(15, 15, 15, 0.2);
-  margin: 10px 0;
-  cursor: pointer;
+    border: 0;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: 11px;
+    background-color: #3498db;
+    color: #fff;
+    box-shadow: 0 0 13px 2px rgba(15, 15, 15, 0.2);
+    margin: 10px 0;
+    cursor: pointer;
 }
-.next-button {
-  background-color: #2ce790;
-  border: 0;
-  border-radius: 40px;
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  padding: 5px;
-  position: absolute;
-  box-shadow: 2px 2px 6px gray;
-  font-family: Dubai;
-  cursor: pointer;
-}
-.disagree {
-  height: 20px;
-  margin-right: 8px;
-  margin-left: 8px;
-  width: auto;
-  transform: rotate(180deg);
-}
-.agree {
 
-  margin-right: 8px;
-  margin-left: 8px;
-  height: 20px;
-  width: auto;
+.next-button {
+    background-color: #2ce790;
+    border: 0;
+    border-radius: 40px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    position: absolute;
+    box-shadow: 2px 2px 6px gray;
+    font-family: Dubai;
+    cursor: pointer;
 }
+
+.disagree {
+    height: 20px;
+    margin-right: 8px;
+    margin-left: 8px;
+    width: auto;
+    transform: rotate(180deg);
+}
+
+.agree {
+    margin-right: 8px;
+    margin-left: 8px;
+    height: 20px;
+    width: auto;
+}
+
 .green {
-  background-color: #25db9e;
-  bottom: 200px;
-  left: 100px;
+    background-color: #25db9e;
+    bottom: 200px;
+    left: 100px;
 }
+
 .red {
-  background-color: #db4f25;
-  bottom: 140px;
-  left: 100px;
+    background-color: #db4f25;
+    bottom: 140px;
+    left: 100px;
 }
 
 /* Custom Setting */
 .dialogue {
-  height: 260px;
-  width: 600px;
-  background: url("assets/images/dialog1.png") no-repeat;
-  background-size: contain;
+    height: 10%;
+    width: 100%;
+    background: url("assets/images/dialog1.png") no-repeat;
+    background-size: contain;
 }
+
 .dialogue2 {
-  display: flex;
-  flex-direction: column;
-  height: 460px;
-  width: 600px;
-  background: url("assets/images/dialog2.png") no-repeat;
-  background-size: contain;
+    display: flex;
+    flex-direction: column;
+    height: 460px;
+    width: 600px;
+    background: url("assets/images/dialog2.png") no-repeat;
+    background-size: contain;
 }
 
 .video {
-  display: flex;
-  align-self: center;
-  justify-self: center;
-  left: 4px;
+    position: relative;
+    left: 14.2%;
+    top: 33%;
 }
-.profile {
-  height: 170px;
-  width: auto;
-}
-.tip {
-  display: flex;
-  direction: rtl;
-  position: absolute;
-  left: 100px;
-  top: 100px;
-}
-.paragraph {
-  margin-right: 50px;
-  padding: 20px;
-}
-.form {
-  width: 320px;
-  height: 420px;
-  background-image: url("assets/images/form.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  direction: rtl;
 
-  position: absolute;
-  bottom: 0vw;
-  right: 8vw;
+.profile {
+    height: 100px;
+    width: auto;
 }
+
+.tip {
+    width: 60%;
+    display: flex;
+    direction: rtl;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+
+.paragraph {
+    margin-right: 50px;
+    padding: 20px;
+}
+
+.form {
+    width: 30%;
+    height: 70%;
+    background-image: url("assets/images/form.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    direction: rtl;
+    position: absolute;
+    bottom: 0;
+    right: 8vw;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .form-title {
+        display: none;
+    }
+}
+
+
 .form-body {
-  margin-left: 30px;
-  margin-right: 30px;
+    margin-left: 10%;
+    margin-right: 15%;
 }
+
 .login-form {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
+
 .login-image {
-  max-width: 500px;
-  position: absolute;
-  bottom: 0;
-  right: 5vw;
+    max-width: 500px;
+    position: absolute;
+    bottom: 0;
 }
+
 .field {
-  border-radius: 50px;
-  height: 30px;
-  padding: 5px;
-  margin-bottom: 8px;
+    border-radius: 50px;
+    height: 24px;
+    padding: 5px;
+    margin-bottom: 8px;
 }
+
 .submit {
-  cursor: pointer;
-  margin-top: 8px;
-  margin-bottom: 24px;
-  min-width: 200px;
-  background-color: #2ce790;
-  border: 0px;
-  border-radius: 40px;
-  color: white;
-  font-size: 16px;
-  text-align: center;
-  padding: 10px;
-  box-shadow: 2px 2px 6px gray;
-  align-self: center;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    min-width: 140px;
+    background-color: #2ce790;
+    border: 0;
+    border-radius: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    padding: 4px;
+    box-shadow: 2px 2px 6px gray;
+    align-self: center;
+    margin-right: 8px;
+}
+
+.label{
+    margin-top: 4px;
 }
 input {
-  padding: 3px;
-  font-family: Dubai;
+    padding: 3px;
+    margin-right: 8px;
+    font-family: Dubai;
 }
+
 button {
-  font-family: Dubai;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5px;
+    font-family: Dubai;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
 }
+
 p {
-  font-size: 20px;
+    font-size: 20px;
 }
+
 .instagram {
-  display: flex;
-  direction: ltr;
-  float: left;
-  align-items: center;
-  height: 40px;
-  margin-left: 25px;
+    display: flex;
+    direction: ltr;
+    float: left;
+    align-items: center;
+    height: 40px;
+    margin-left: 25px;
 }
+
 .insta-image {
-  height: 25px;
-  width: auto;
+    height: 25px;
+    width: auto;
 }
 
 /* Steps Page */
 .step-1 {
-  height: 100vh;
-  width: auto;
-  background: #e8e8e8 url("assets/images/stepOneBackground.png") no-repeat left;
-  background-size: 100%;
+    height: 100vh;
+    width: auto;
+    background: #e8e8e8 url("assets/images/stepOneBackground.png") no-repeat left;
+    background-size: 100%;
 }
 
 .step-1 .next-button {
-  min-width: 150px;
-  bottom: 80px;
-  left: 100px;
+    width: 15%;
+    bottom: 10%;
+    left: 5%;
 }
+
 .step-2 .next-button {
-  min-width: 200px;
+    width: 20%;
+    top: 70%;
+    left: 5%;
+    position: relative;
+    margin-top: 12px;
 }
+
+@media only screen and (max-width: 800px) {
+    .step-2 .next-button {
+        width: 30%;
+        top: 60%;
+    }
+}
+
+
 .step-2 {
-  height: 100vh;
-  background: #e8e8e8 url("assets/images/stepTwoBackground.png") no-repeat right;
-  background-size: 100%;
+    height: 100vh;
+    width: auto;
+    background: #e8e8e8 url("assets/images/stepTwoBackground.png") no-repeat right;
+    background-size: 100%;
 }
+
 .step-3 {
-  height: 100vh;
-  background: #e8e8e8 url("assets/images/stepThreeBackground.png") no-repeat right;
-  background-size: 100%;
+    height: 100vh;
+    width: auto;
+    background: #e8e8e8 url("assets/images/stepThreeBackground.png") no-repeat right;
+    background-size: 100%;
 }
+
+.step-3 .next-button {
+    width: 25%;
+    left: 5%;
+    top: 70%;
+    position: relative;
+    margin-top: 12px;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .step-3 .next-button {
+        width: 40%;
+        top: 65%;
+    }
+}
+
+
 .step-4 {
-  height: 100vh;
-  background: #e8e8e8 url("assets/images/stepFourBackground.png") no-repeat;
-  background-size: 100%;
+    height: 100vh;
+    width: auto;
+    background: #e8e8e8 url("assets/images/stepFourBackground.png") no-repeat;
+    background-size: 100%;
 }
+
 .step-4 .next-button {
-  min-width: 150px;
-  bottom: 80px;
-  right: 100px;
+    width: 15%;
+    bottom: 10%;
+    right: 5%;
 }
+
 .step-5 {
-  height: 100vh;
-  background:#e8e8e8 url("assets/images/stepFiveBackground.png") no-repeat;
-  background-size: 100%;
+    height: 100vh;
+    width: auto;
+    background: #e8e8e8 url("assets/images/stepFiveBackground.png") no-repeat;
+    background-size: 100%;
 }
+
 .step-5 .next-button {
-  min-width: 150px;
-  left: 30%;
+    width: 20%;
+    left: 30%;
 }
+
+
 .step-5 .red {
-  bottom: 5vh;
+    bottom: 5vh;
 }
+
 .step-5 .green {
-  bottom: 14vh;
+    bottom: 14vh;
 }
+
 .step-7 {
-  height: 100vh;
-  background: #e8e8e8 url("assets/images/stepSixBackground.png") no-repeat;
-  background-size: 100%;
+    height: 100vh;
+    width: auto;
+    background: #e8e8e8 url("assets/images/stepSixBackground.png") no-repeat;
+    background-size: 100%;
 }
+
 .step-7 .next-button {
-  min-width: 150px;
-  bottom: 80px;
-  left: 100px;
+    width: 15%;
+    bottom: 10%;
+    left: 5%;
 }
+
 .step-8 {
-  height: 100vh;
-  background: #e8e8e8 url("assets/images/stepSevenBackground.png") no-repeat;
-  background-size: 100%;
+    height: 100vh;
+    width: auto;
+    background: #e8e8e8 url("assets/images/stepSevenBackground.png") no-repeat;
+    background-size: 100%;
 }
+
 .step-8 .next-button {
-  min-width: 320px;
-  left: 200px;
+    width: 25%;
+    left: 10%;
+    top: 70%;
+    position: relative;
+    margin-top: 12px;
 }
+
+
+@media only screen and (max-width: 800px) {
+    .step-8 .next-button {
+        width: 40%;
+        top: 65%;
+    }
+}
+
 .step-9 {
-  height: 100vh;
-  background:#e8e8e8 url("assets/images/stepEightBackground.png") no-repeat;
-  background-size: 100%;
+    height: 100vh;
+    width: auto;
+    background: #e8e8e8 url("assets/images/stepEightBackground.png") no-repeat;
+    background-size: 100%;
 }
+
 .step-9 .next-button {
-  min-width: 250px;
-  left: 200px;
+    width: 20%;
+    left: 10%;
+    top: 70%;
+    position: relative;
+    margin-top: 12px;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .step-9 .next-button {
+        width: 30%;
+        top: 60%;
+    }
 }
 .step-10 {
-  height: 100vh;
-  background: #e8e8e8 url("assets/images/stepNineBackground.png") no-repeat right;
-  background-size: 100%;
+    height: 100vh;
+    width: auto;
+    background: #e8e8e8 url("assets/images/stepNineBackground.png") no-repeat right;
+    background-size: 100%;
 }
+
 .step-10 .next-button {
-  min-width: 250px;
-  left: 200px;
-  bottom: 300px;
+    min-width: 250px;
+    left: 200px;
+    bottom: 300px;
 }
+
 .step-10 .red {
-  bottom: 240px;
+    bottom: 240px;
 }
+
 .step-10 .green {
-  bottom: 300px;
+    bottom: 300px;
 }
+
 .step-11 {
-  height: 100vh;
-  background: #e8e8e8 url("assets/images/stepTenBackground.png") no-repeat;
-  background-size: 100%;
-  position: relative;
-  align-items: center;
-  color: white;
+    height: 100vh;
+    width: auto;
+    background: #e8e8e8 url("assets/images/stepTenBackground.png") no-repeat;
+    background-size: 100%;
+    position: relative;
+    align-items: center;
+    color: white;
 }

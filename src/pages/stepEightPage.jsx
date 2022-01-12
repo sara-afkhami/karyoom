@@ -7,13 +7,13 @@ export default class StepEightPage extends React.Component {
         return (
             <div className="step-8 page" >
                 <Link to="/step9">
-                    <button className="next-button green"  style={{width: "400px"}}>
+                    <button className="next-button green">
                         <img className="agree" src={like} alt=" "/>
                         وای ازین بهتر نمیشه
                     </button>
                 </Link>
                 <Link to="/step9">
-                    <button className="next-button red"  style={{width: "400px"}}>
+                    <button className="next-button red">
                         {" "}
                         <img className="disagree" src={like} alt=" "/>
                         حالا چه ضرورتی داره، بعدا تهیه می کنم
