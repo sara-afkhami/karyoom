@@ -33,6 +33,8 @@
     cursor: pointer;
 }
 
+.Toastify__toast-body { font-family: Dubai; }
+
 .next-button {
     background-color: #2ce790;
     border: 0;
