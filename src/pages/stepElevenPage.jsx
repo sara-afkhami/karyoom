@@ -1,7 +1,7 @@
 import React from "react";
 import {useState} from "react";
 import {Formik, Field, Form} from "formik";
-import {toast, css} from "react-toastify";
+import {toast} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 import StorageHelper from "../helper/storageHelper";
@@ -21,10 +21,6 @@ function isUserRegistered() {
 }
 
 function StepElevenPage() {
-    const [name, setName] = useState("");
-    const [email, setMail] = useState("");
-    const [phone, setPhone] = useState("");
-    const [status, setStatus] = useState();
     const [showForm, setShowForm] = React.useState(true);
     const hideForm = () => {
         setShowForm();
@@ -47,19 +43,15 @@ function StepElevenPage() {
                         }}
                         onSubmit={(values) => {
                             if (values.name && values.email && values.phoneNumber) {
-                                setName(values.name);
-                                setMail(values.email);
-                                setPhone(values.phoneNumber);
-                                setStatus(StorageHelper.getSteps());
+
+                                let name = values.name;
+                                let email = values.email;
+                                let phone = values.phoneNumber;
+                                let status = StorageHelper.getSteps();
 
                                 const object = {name, email, phone, status};
                                 console.log(JSON.stringify(object));
-
-                                axios
-                                    .post(
-                                        "https://sheet.best/api/sheets/dd13bc57-63be-4c25-a45a-78fce09043c5",
-                                        object
-                                    )
+                                axios.post("https://sheet.best/api/sheets/dd13bc57-63be-4c25-a45a-78fce09043c5", object)
                                     .then((response) => {
                                         success();
                                         hideForm();
@@ -69,8 +61,7 @@ function StepElevenPage() {
                                 error();
                             }
 
-                        }}
-                    >
+                        }}>
                         {() => (
                             <Form className="login-form">
                                 <label className="label" htmlFor="name">

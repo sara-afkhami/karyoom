@@ -8,11 +8,11 @@ export default class StepTwoPage extends React.Component {
         return (
             <div className="step-2 page">
                 <Link to="/step3">
-                    <button className="next-button green" onClick={StorageHelper.addStep("1")}>
+                    <button className="next-button green" onClick={() => StorageHelper.addStep("1")}>
                         <img className="agree" src={like} alt=" "/>
                         موافقم
                     </button>
-                    <button className="next-button red" onClick={StorageHelper.addStep("1")}>
+                    <button className="next-button red" onClick={() => StorageHelper.addStep("0")}>
                         {" "}
                         <img className="disagree" src={like} alt=" "/>
                         مخالفم، دقیق میدونم
