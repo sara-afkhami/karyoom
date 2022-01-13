@@ -4,8 +4,8 @@ import {Formik, Field, Form} from "formik";
 import {toast, css} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
+import StorageHelper from "../helper/storageHelper";
 
-let array = [];
 toast.configure();
 
 const success = () => {
@@ -29,7 +29,7 @@ function StepElevenPage() {
     const hideForm = () => {
         setShowForm();
         localStorage.setItem("submit", "true");
-    }
+    };
 
     return (
         <div className="step-11 page">
@@ -50,7 +50,7 @@ function StepElevenPage() {
                                 setName(values.name);
                                 setMail(values.email);
                                 setPhone(values.phoneNumber);
-                                setStatus(array);
+                                setStatus(StorageHelper.getSteps());
 
                                 const object = {name, email, phone, status};
                                 console.log(JSON.stringify(object));
