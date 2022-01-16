@@ -310,7 +310,7 @@ p {
 }
 
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1500px) {
     .step-5 .buttons{
         position: relative;
         display: flex;

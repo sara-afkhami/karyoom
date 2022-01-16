@@ -22,6 +22,7 @@ export default class StepSevenPage extends React.Component {
                         width="36%"
                         url="https://as4.cdn.asset.aparat.com/aparat-video/13eaba29fca59939a9f9a06f99ea68e827383028-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjljZmQzMGFmNjkyOTdiNjhhODQxYzdjN2E5NWEwYjFhIiwiZXhwIjoxNjQxODYzODEyLCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.4ZxE9u1PBVac2yCOkFNeSmvd6GruOja6VpgCjvJF8iM"
                     /></div>
+                    <div className="buttons">
                     <button className="next-button green" onClick={() => StorageHelper.addStep("1")}>
                         <img className="agree" src={like} alt=" "/>
                         خیلی خوب بود
@@ -31,6 +32,7 @@ export default class StepSevenPage extends React.Component {
                         <img className="disagree" src={like} alt=" "/>
                         دوسش نداشتم
                     </button>
+                    </div>
                     <Link to="/step8">
                         {/* {timeOut()} */}
                     </Link>
