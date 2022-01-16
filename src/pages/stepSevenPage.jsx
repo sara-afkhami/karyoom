@@ -33,7 +33,6 @@ export default class StepSevenPage extends React.Component {
                     </button>
                     <Link to="/step8">
                         {/* {timeOut()} */}
-                        next step
                     </Link>
             </div>
         );

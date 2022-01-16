@@ -298,16 +298,38 @@ p {
 
 .step-5 .next-button {
     width: 20%;
-    left: 30%;
+}
+/* buttons css */
+.step-5 .buttons{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 70%;
+    left: 8%;
 }
 
 
-.step-5 .red {
-    bottom: 5vh;
-}
+@media only screen and (max-width: 1400px) {
+    .step-5 .buttons{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        top: 50%;
+    }
+    .step-5 .red {
+        left: 5%;
+    }
+    
+    .step-5 .green {
+        left: 35%;
+    }
 
-.step-5 .green {
-    bottom: 14vh;
+    .step-5 .next-button {
+        width: 25%;
+        bottom: 5%;
+    }
 }
 
 .step-7 {
@@ -376,18 +398,52 @@ p {
 }
 
 .step-10 .next-button {
-    min-width: 250px;
-    left: 200px;
-    bottom: 300px;
+    width: 20%;
+    
+}
+/* buttons css */
+.step-10 .buttons {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 80%;
+    left: 5%;
 }
 
-.step-10 .red {
-    bottom: 240px;
+
+@media only screen and (max-width: 1200px) {
+    .step-10 .buttons{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        top: 60%;
+    }
+    .step-10 .next-button {
+        width: 12%;   
+    }
+    .step-10 .red {
+        left: 5%;
+    }
+    
+    .step-10 .green {
+        left: 35%;
+    }
+
+    .step-10 .next-button {
+        width: 25%;
+        bottom: 5%;
+    }
+}
+
+/* .step-10 .red {
+    bottom: 40%;
 }
 
 .step-10 .green {
-    bottom: 300px;
-}
+    bottom: 50%;
+} */
 
 .step-11 {
     height: 100vh;
