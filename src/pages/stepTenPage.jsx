@@ -6,7 +6,7 @@ import StorageHelper from "../helper/storageHelper";
 export default class StepTenPage extends React.Component {
     render() {
         return (
-            <div className="step-9 page">
+            <div className="step-10 page">
                 <Link to="/step11">
                     <button className="next-button green" onClick={() => StorageHelper.addStep("1")}>
                         <img className="agree" src={like} alt=" "/>

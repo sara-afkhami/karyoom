@@ -5,6 +5,7 @@ import {toast} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 import StorageHelper from "../helper/storageHelper";
+import NumberFormat from 'react-number-format';
 
 toast.configure();
 
@@ -86,11 +87,13 @@ function StepElevenPage() {
                                 <label className="label" htmlFor="phoneNumber">
                                     شماره تلفن
                                 </label>
-                                <Field
-                                    className="field"
-                                    id="phoneNumber"
-                                    name="phoneNumber"
-                                    placeholder="شماره تلفن"
+                                <NumberFormat
+                                type="numbers"
+                                className="field"
+                                id="phoneNumber"
+                                name="phoneNumber"
+                                placeholder="شماره تلفن"
+                                isNumericString={true}
                                 />
                                 <button className="submit" type="submit">
                                     ثبت نام
