@@ -219,7 +219,7 @@ p {
 .step-1 {
     height: 100vh;
     width: auto;
-    background: #e8e8e8 url("assets/images/stepOneBackground.png") no-repeat left;
+    background: #e8e8e8 url("assets/images/stepOneBackground.jpg") no-repeat left;
     background-size: 100%;
 }
 
@@ -248,14 +248,14 @@ p {
 .step-2 {
     height: 100vh;
     width: auto;
-    background: #e8e8e8 url("assets/images/stepTwoBackground.png") no-repeat right;
+    background: #e8e8e8 url("assets/images/stepTwoBackground.jpg") no-repeat right;
     background-size: 100%;
 }
 
 .step-3 {
     height: 100vh;
     width: auto;
-    background: #e8e8e8 url("assets/images/stepThreeBackground.png") no-repeat right;
+    background: #e8e8e8 url("assets/images/stepThreeBackground.jpg") no-repeat right;
     background-size: 100%;
 }
 
@@ -279,7 +279,7 @@ p {
 .step-4 {
     height: 100vh;
     width: auto;
-    background: #e8e8e8 url("assets/images/stepFourBackground.png") no-repeat;
+    background: #e8e8e8 url("assets/images/stepFourBackground.jpg") no-repeat;
     background-size: 100%;
 }
 
@@ -292,7 +292,7 @@ p {
 .step-5 {
     height: 100vh;
     width: auto;
-    background: #e8e8e8 url("assets/images/stepFiveBackground.png") no-repeat;
+    background: #e8e8e8 url("assets/images/stepFiveBackground.jpg") no-repeat;
     background-size: 100%;
 }
 
@@ -335,7 +335,7 @@ p {
 .step-7 {
     height: 100vh;
     width: auto;
-    background: #e8e8e8 url("assets/images/stepSixBackground.png") no-repeat;
+    background: #e8e8e8 url("assets/images/stepSixBackground.jpg") no-repeat;
     background-size: 100%;
 }
 
@@ -348,7 +348,7 @@ p {
 .step-8 {
     height: 100vh;
     width: auto;
-    background: #e8e8e8 url("assets/images/stepSevenBackground.png") no-repeat;
+    background: #e8e8e8 url("assets/images/stepSevenBackground.jpg") no-repeat;
     background-size: 100%;
 }
 
@@ -371,7 +371,7 @@ p {
 .step-9 {
     height: 100vh;
     width: auto;
-    background: #e8e8e8 url("assets/images/stepEightBackground.png") no-repeat;
+    background: #e8e8e8 url("assets/images/stepEightBackground.jpg") no-repeat;
     background-size: 100%;
 }
 
@@ -393,7 +393,7 @@ p {
 .step-10 {
     height: 100vh;
     width: auto;
-    background: #e8e8e8 url("assets/images/stepNineBackground.png") no-repeat right;
+    background: #e8e8e8 url("assets/images/stepNineBackground.jpg") no-repeat right;
     background-size: 100%;
 }
 
@@ -448,7 +448,7 @@ p {
 .step-11 {
     height: 100vh;
     width: auto;
-    background: #e8e8e8 url("assets/images/stepTenBackground.png") no-repeat;
+    background: #e8e8e8 url("assets/images/stepTenBackground.jpg") no-repeat;
     background-size: 100%;
     position: relative;
     align-items: center;
