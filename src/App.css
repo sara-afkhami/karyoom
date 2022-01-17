@@ -33,7 +33,9 @@
     cursor: pointer;
 }
 
-.Toastify__toast-body { font-family: Dubai; }
+.Toastify__toast-body {
+    font-family: Dubai;
+}
 
 .next-button {
     background-color: #2ce790;
@@ -84,6 +86,7 @@
     background: url("assets/images/dialog1.png") no-repeat;
     background-size: 100%;
 }
+
 /* .dialogue1{
 display: flex;
 flex-direction: row;
@@ -102,7 +105,7 @@ right: 30%;
 
 .video {
     position: relative;
-    left: 15%;
+    left: 18%;
     top: 25%;
 }
 
@@ -187,9 +190,10 @@ right: 30%;
     margin-right: 8px;
 }
 
-.label{
+.label {
     margin-top: 4px;
 }
+
 input {
     padding: 3px;
     margin-right: 8px;
@@ -222,16 +226,18 @@ p {
     height: 25px;
     width: auto;
 }
-html{
+
+html {
     height: 100%;
 }
+
 /* Steps Page */
 .step-1 {
     height: 100vh;
     width: auto;
-    background: #e8e8e8 url("assets/images/stepOneBackground.jpg") no-repeat left;
-    background-size:auto 100%;
-    overflow-x : hidden;
+    background: #e8e8e8 url("assets/images/stepOneBackground.jpg") no-repeat right;
+    background-size: auto 100%;
+    overflow-x: hidden;
 }
 
 .step-1 .next-button {
@@ -259,17 +265,17 @@ html{
 .step-2 {
     height: 100vh;
     width: auto;
-    background: #e8e8e8 url("assets/images/stepTwoBackground.jpg") no-repeat ;
-    background-size:auto 100%;
-    overflow-x : hidden;
+    background: #e8e8e8 url("assets/images/stepTwoBackground.jpg") no-repeat;
+    background-size: auto 100%;
+    overflow-x: hidden;
 }
 
 .step-3 {
     height: 100vh;
     width: auto;
-    background: #e8e8e8 url("assets/images/stepThreeBackground.jpg") no-repeat right;
-    background-size:auto 100%;
-    overflow-x : hidden;
+    background: #e8e8e8 url("assets/images/stepThreeBackground.jpg") no-repeat left;
+    background-size: auto 100%;
+    overflow-x: hidden;
 }
 
 .step-3 .next-button {
@@ -292,9 +298,9 @@ html{
 .step-4 {
     height: 100vh;
     width: auto;
-    background: #e8e8e8 url("assets/images/stepFourBackground.jpg") no-repeat;
-    background-size:auto 100%;
-    overflow-x : hidden;
+    background: #e8e8e8 url("assets/images/stepFourBackground.jpg") no-repeat right;
+    background-size: auto 100%;
+    overflow-x: hidden;
 }
 
 .step-4 .next-button {
@@ -307,15 +313,16 @@ html{
     height: 100vh;
     width: auto;
     background: #e8e8e8 url("assets/images/stepFiveBackground.jpg") no-repeat;
-    background-size:auto 100%;
-    overflow-x : hidden;
+    background-size: auto 100%;
+    overflow-x: hidden;
 }
 
 .step-5 .next-button {
     width: 20%;
 }
+
 /* buttons css */
-.step-5 .buttons{
+.step-5 .buttons {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -326,17 +333,18 @@ html{
 
 
 @media only screen and (max-width: 1500px) {
-    .step-5 .buttons{
+    .step-5 .buttons {
         position: relative;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         top: 50%;
     }
+
     .step-5 .red {
         left: 5%;
     }
-    
+
     .step-5 .green {
         left: 35%;
     }
@@ -350,9 +358,9 @@ html{
 .step-7 {
     height: 100vh;
     width: auto;
-    background: #e8e8e8 url("assets/images/stepSixBackground.jpg") no-repeat;
-    background-size:auto 100%;
-    overflow-x : hidden;
+    background: #e8e8e8 url("assets/images/stepSixBackground.jpg") no-repeat right;
+    background-size: auto 100%;
+    overflow-x: hidden;
 }
 
 .step-7 .next-button {
@@ -365,8 +373,8 @@ html{
     height: 100vh;
     /* width: auto; */
     background: #e8e8e8 url("assets/images/stepSevenBackground.jpg") no-repeat;
-    background-size:auto 100%;
-    overflow-x : hidden;
+    background-size: auto 100%;
+    overflow-x: hidden;
 }
 
 .step-8 .next-button {
@@ -389,8 +397,8 @@ html{
     height: 100vh;
     width: auto;
     background: #e8e8e8 url("assets/images/stepEightBackground.jpg") no-repeat;
-    background-size:auto 100%;
-    overflow-x : hidden;
+    background-size: auto 100%;
+    overflow-x: hidden;
 }
 
 .step-9 .next-button {
@@ -408,18 +416,20 @@ html{
         top: 60%;
     }
 }
+
 .step-10 {
     height: 100vh;
     width: auto;
-    background: #e8e8e8 url("assets/images/stepNineBackground.jpg") no-repeat right;
-    background-size:auto 100%;
-    overflow-x : hidden;
+    background: #e8e8e8 url("assets/images/stepNineBackground.jpg") no-repeat left;
+    background-size: auto 100%;
+    overflow-x: hidden;
 }
 
 .step-10 .next-button {
     width: 20%;
-    
+
 }
+
 /* buttons css */
 .step-10 .buttons {
     position: relative;
@@ -432,20 +442,22 @@ html{
 
 
 @media only screen and (max-width: 1200px) {
-    .step-10 .buttons{
+    .step-10 .buttons {
         position: relative;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         top: 60%;
     }
+
     .step-10 .next-button {
-        width: 12%;   
+        width: 12%;
     }
+
     .step-10 .red {
         left: 5%;
     }
-    
+
     .step-10 .green {
         left: 35%;
     }
@@ -468,8 +480,8 @@ html{
     height: 100vh;
     width: auto;
     background: #e8e8e8 url("assets/images/stepTenBackground.jpg") no-repeat;
-    background-size:auto 100%;
-    overflow-x : hidden;
+    background-size: auto 100%;
+    overflow-x: hidden;
     position: relative;
     align-items: center;
     color: white;
