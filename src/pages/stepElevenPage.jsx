@@ -88,12 +88,12 @@ function StepElevenPage() {
                                     شماره تلفن
                                 </label>
                                 <NumberFormat
-                                type="numbers"
-                                className="field"
-                                id="phoneNumber"
-                                name="phoneNumber"
-                                placeholder="شماره تلفن"
-                                isNumericString={true}
+                                    type="numbers"
+                                    className="field"
+                                    id="phoneNumber"
+                                    name="phoneNumber"
+                                    placeholder="شماره تلفن"
+                                    isNumericString={true}
                                 />
                                 <button className="submit" type="submit">
                                     ثبت نام
