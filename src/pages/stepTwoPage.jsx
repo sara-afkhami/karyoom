@@ -2,9 +2,15 @@ import React from "react";
 import {Link} from "react-router-dom";
 import like from "../assets/images/icon/like.png";
 import StorageHelper from "../helper/storageHelper"
+import { withLastLocation } from 'react-router-last-location';
 
 export default class StepTwoPage extends React.Component {
     render() {
+        const { location, history } = this.props
+        // let stepCurrent = location.pathname.match(/\d+$/)[0];
+        // let stepPrv = lastLocation.pathname.match(/\d+$/)[0];
+        // console.log(stepCurrent,stepPrv+ "here")
+
         return (
             <div className="step-2 page">
                 <Link to="/step3">
