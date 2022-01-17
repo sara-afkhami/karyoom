@@ -146,6 +146,7 @@ right: 30%;
 
 
 .form-body {
+    margin-top: 10%;
     margin-left: 10%;
     margin-right: 15%;
 }
@@ -165,7 +166,7 @@ right: 30%;
     border-radius: 50px;
     height: 24px;
     padding: 5px;
-    margin-bottom: 8px;
+    margin-bottom: 4%;
 }
 
 .submit {
@@ -192,6 +193,7 @@ right: 30%;
 input {
     padding: 3px;
     margin-right: 8px;
+    margin-bottom: 2%;
     font-family: Dubai;
 }
 
