@@ -1,8 +1,11 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import like from "../assets/images/icon/like.png";
-import StorageHelper from "../helper/storageHelper"
-import { withLastLocation } from 'react-router-last-location';
+import StorageHelper from "../helper/storageHelper";
+// import {
+//   withLastLocation,
+//   WithLastLocationProps
+// } from "react-router-last-location";
 
 export default class StepTwoPage extends React.Component {
     render() {
@@ -28,3 +31,4 @@ export default class StepTwoPage extends React.Component {
         );
     }
 }
+

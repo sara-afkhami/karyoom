@@ -19,12 +19,12 @@ import { LastLocationProvider, withLastLocation,
     WithLastLocationProps
   } from "react-router-last-location";
 
-const styleRoute = {
-    '1-to-2' : 'bg-red-100',
-    '2-to-3' : 'bg-red-100',
-    left : 'bg-red-100',
-    right : 'bg-red-100',
-}
+// const styleRoute = {
+//     '1-to-2' : 'bg-red-100',
+//     '2-to-3' : 'bg-red-100',
+//     left : 'bg-red-100',
+//     right : 'bg-red-100',
+// }
 
 class App extends Component  {
     constructor(props) {

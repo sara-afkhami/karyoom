@@ -87,40 +87,43 @@
     background-size: 100%;
 }
 
-/* .dialogue1{
+/* .video-content{
 display: flex;
-flex-direction: row;
-width: 400px;
-position: relative;
-bottom: 40%;
-right: 30%;
+flex-direction: column-reverse;
+justify-content: space-between;
 } */
-.dialogue2 {
+
+.videoPlayer{
+    position: relative;
     display: flex;
-    flex-direction: column;
-    height: 460px;
-    width: 600px;
+    flex-direction: row-reverse;
+    justify-content:left;
+    left: 5%;
+    top: 5%;
+}
+.video {
+    height: 80vw;
+    width: 40vw;
+    background: url("assets/images/dialogue.png") no-repeat;
+    /* display: flex; */
+    flex-direction: column-reverse;
+    background-size: contain;
 
 }
+.profile-image{
+  height: 20vh;
+}
 
-.video {
-    position: relative;
-    left: 18%;
-    top: 25%;
+.player{
+    padding-left: 10%;
+    display: flex;
+    margin-top: 20%;
 }
 
 .profile {
-    height: 100px;
-    width: auto;
-}
-
-.tip {
-    width: 60%;
-    display: flex;
-    direction: rtl;
-    position: absolute;
-    left: 10%;
-    top: 10%;
+    height: 20px;
+    width: 20px;
+    max-height: 100px;
 }
 
 .paragraph {
@@ -140,13 +143,14 @@ right: 30%;
     right: 8vw;
 }
 
-
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
     .form-title {
         display: none;
     }
+    .form{
+        background-image: url("assets/images/mobileForm.png");
+    }
 }
-
 
 .form-body {
     margin-top: 10%;
@@ -235,7 +239,7 @@ html {
 .step-1 {
     height: 100vh;
     width: auto;
-    background: #e8e8e8 url("assets/images/stepOneBackground.jpg") no-repeat right;
+    background: #e8e8e8 url("assets/images/stepOneBackground.jpg") no-repeat left;
     background-size: auto 100%;
     overflow-x: hidden;
 }
@@ -265,7 +269,7 @@ html {
 .step-2 {
     height: 100vh;
     width: auto;
-    background: #e8e8e8 url("assets/images/stepTwoBackground.jpg") no-repeat;
+    background: #e8e8e8 url("assets/images/stepTwoBackground.jpg") no-repeat right;
     background-size: auto 100%;
     overflow-x: hidden;
 }
@@ -273,7 +277,7 @@ html {
 .step-3 {
     height: 100vh;
     width: auto;
-    background: #e8e8e8 url("assets/images/stepThreeBackground.jpg") no-repeat left;
+    background: #e8e8e8 url("assets/images/stepThreeBackground.jpg") no-repeat right;
     background-size: auto 100%;
     overflow-x: hidden;
 }
@@ -298,7 +302,7 @@ html {
 .step-4 {
     height: 100vh;
     width: auto;
-    background: #e8e8e8 url("assets/images/stepFourBackground.jpg") no-repeat right;
+    background: #e8e8e8 url("assets/images/stepFourBackground.jpg") no-repeat left;
     background-size: auto 100%;
     overflow-x: hidden;
 }
@@ -312,7 +316,7 @@ html {
 .step-5 {
     height: 100vh;
     width: auto;
-    background: #e8e8e8 url("assets/images/stepFiveBackground.jpg") no-repeat;
+    background: #e8e8e8 url("assets/images/stepFiveBackground.jpg") no-repeat left;
     background-size: auto 100%;
     overflow-x: hidden;
 }
@@ -323,22 +327,22 @@ html {
 
 /* buttons css */
 .step-5 .buttons {
-    position: relative;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    top: 70%;
-    left: 8%;
+    /* top: 60%;
+    left: 8%; */
 }
 
 
 @media only screen and (max-width: 1500px) {
     .step-5 .buttons {
-        position: relative;
+        
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        top: 50%;
+        /* top: 50%; */
     }
 
     .step-5 .red {
@@ -358,7 +362,7 @@ html {
 .step-7 {
     height: 100vh;
     width: auto;
-    background: #e8e8e8 url("assets/images/stepSixBackground.jpg") no-repeat right;
+    background: #e8e8e8 url("assets/images/stepSixBackground.jpg") no-repeat left;
     background-size: auto 100%;
     overflow-x: hidden;
 }
@@ -372,7 +376,7 @@ html {
 .step-8 {
     height: 100vh;
     /* width: auto; */
-    background: #e8e8e8 url("assets/images/stepSevenBackground.jpg") no-repeat;
+    background: #e8e8e8 url("assets/images/stepSevenBackground.jpg") no-repeat right;
     background-size: auto 100%;
     overflow-x: hidden;
 }
@@ -396,7 +400,7 @@ html {
 .step-9 {
     height: 100vh;
     width: auto;
-    background: #e8e8e8 url("assets/images/stepEightBackground.jpg") no-repeat;
+    background: #e8e8e8 url("assets/images/stepEightBackground.jpg") no-repeat left;
     background-size: auto 100%;
     overflow-x: hidden;
 }
@@ -420,7 +424,7 @@ html {
 .step-10 {
     height: 100vh;
     width: auto;
-    background: #e8e8e8 url("assets/images/stepNineBackground.jpg") no-repeat left;
+    background: #e8e8e8 url("assets/images/stepNineBackground.jpg") no-repeat right;
     background-size: auto 100%;
     overflow-x: hidden;
 }
@@ -479,10 +483,11 @@ html {
 .step-11 {
     height: 100vh;
     width: auto;
-    background: #e8e8e8 url("assets/images/stepTenBackground.jpg") no-repeat;
+    background: #e8e8e8 url("assets/images/stepTenBackground.jpg") no-repeat left;
     background-size: auto 100%;
     overflow-x: hidden;
     position: relative;
     align-items: center;
     color: white;
 }
+
