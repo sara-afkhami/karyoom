@@ -18,6 +18,7 @@ import PreventMobileWidget from "./widgets/preventMobileWidget";
 import { LastLocationProvider, withLastLocation,
     WithLastLocationProps
   } from "react-router-last-location";
+import { getNumberFromEndStrings } from "./utils/functionsStrings";
 
 // const styleRoute = {
 //     '1-to-2' : 'bg-red-100',
@@ -25,6 +26,7 @@ import { LastLocationProvider, withLastLocation,
 //     left : 'bg-red-100',
 //     right : 'bg-red-100',
 // }
+window.onpopstate = function (e) { window.history.forward(1); }
 
 class App extends Component  {
     constructor(props) {
@@ -32,7 +34,9 @@ class App extends Component  {
         this.state = {};
     }
 
-    componentDidMount() {
+    componentDidMount() {window.onhashchange = function() {
+        console.log('is change is change')
+    }
         window.addEventListener("resize", this.resize.bind(this));
         this.resize();
     }
@@ -49,8 +53,10 @@ class App extends Component  {
     render() {
         const {location} = this.props;
         const currentKey = location.pathname.split("/")[1] || "/";
-        const timeout = {enter: 500, exit: 200};
-        // let stepCurrent = location.pathname.match(/\d+$/)[0];
+        const timeout = {enter: 600, exit: 600};
+        
+        let stepCurrent = getNumberFromEndStrings(location.pathname)
+        console.log(stepCurrent)
         // let stepPrv = lastLocation.pathname.match(/\d+$/)[0];
         // console.log(stepCurrent,stepPrv+ "here")
 
@@ -59,9 +65,11 @@ class App extends Component  {
                 <CSSTransition
                     key={currentKey}
                     timeout={timeout}
-                    classNames="pageSlider"
+                    classNames={`pageSlider${stepCurrent}`}
                     mountOnEnter={false}
                     unmountOnExit={false}>
+                            {/* <LastLocationProvider> */}
+
                     <Switch location={location}>
                         <LastLocationProvider>
                         <Route path="/" exact component={StepOnePage}/>
@@ -77,6 +85,8 @@ class App extends Component  {
                         <Route path="/step11" exact component={StepElevenPage}/>
                         </LastLocationProvider>
                     </Switch>
+                    {/* </LastLocationProvider> */}
+
                 </CSSTransition>
             </TransitionGroup>
         );
