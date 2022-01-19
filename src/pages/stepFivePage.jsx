@@ -7,6 +7,8 @@ import profile from "../assets/images/icon/profile.png"
 
 export default class StepFivePage extends React.Component {
     render() {
+        const help = StorageHelper.getSteps();
+    console.log("help------>"+help)
         return (
             <div className="step-5 page">
                 {/* <div className="video-content"> */}

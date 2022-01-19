@@ -5,6 +5,8 @@ import StorageHelper from "../helper/storageHelper";
 
 export default class StepThreePage extends React.Component {
   render() {
+    const help = StorageHelper.getSteps();
+    console.log("help------>"+help)
     return (
       <div className="step-3 page">
         <Link to="/step4">

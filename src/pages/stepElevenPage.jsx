@@ -17,7 +17,7 @@ const error = () => {
 };
 
 function isUserRegistered() {
-    return localStorage.getItem("submit");
+    // return localStorage.getItem("submit");
 }
 
 const StepElevenPage = ()=> {
@@ -60,6 +60,7 @@ const StepElevenPage = ()=> {
                                         success();
                                         hideForm();
                                         console.log("--->>> " + response);
+                                        window.localStorage.clear();
                                     });
                             } else {
                                 error();
