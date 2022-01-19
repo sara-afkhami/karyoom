@@ -4,8 +4,6 @@ import {toast} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 import StorageHelper from "../helper/storageHelper";
-import NumberFormat from 'react-number-format';
-
 
 
 toast.configure();
@@ -92,8 +90,9 @@ const StepElevenPage = ()=> {
                                 <label className="label" htmlFor="phoneNumber">
                                     شماره تلفن
                                 </label>
-                                <NumberFormat
-                                    type="numbers"
+                                <Field
+                                    type="text" 
+                                    pattern="^[0-9\b]+$"
                                     className="field"
                                     id="phoneNumber"
                                     name="phoneNumber"
