@@ -5,10 +5,6 @@ import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 import StorageHelper from "../helper/storageHelper";
 import NumberFormat from 'react-number-format';
-import { withLastLocation } from 'react-router-last-location';
-import { getNumberFromEndStrings } from "../utils/functionsStrings";
-import { useLocation } from "react-router-dom";
-import { useLastLocation } from 'react-router-last-location';
 
 
 
@@ -29,27 +25,16 @@ function isUserRegistered() {
 const StepElevenPage = ()=> {
 
     const [showForm, setShowForm] = useState(true);
-    const location = useLocation();
-    const lastLocation = useLastLocation()
-
-    const currentPathname = getNumberFromEndStrings(location.pathname)
-    const [prvPage , setprevPage] = useState()
 
     const hideForm = () => {
         setShowForm();
         localStorage.setItem("submit", "true");
     };
-    useEffect(()=>{
-        if(lastLocation){
-            // console.log(lastLocation)
-            setprevPage(getNumberFromEndStrings(lastLocation.pathname))
-        }
-    },[lastLocation])
-
+   
     return (
         <>
         {/* {prvPage && ( */}
-        <div className={`step-11 page from-${prvPage}-to-${currentPathname}`}>
+        <div className={"step-11 page"}>
             {!isUserRegistered() && showForm ? <div className="form">
                 <div className="form-body">
                     <h3 className="form-title">
@@ -130,4 +115,4 @@ const StepElevenPage = ()=> {
     );
 }
 
-export default withLastLocation(StepElevenPage);
+export default StepElevenPage;
