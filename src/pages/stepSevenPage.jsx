@@ -13,8 +13,6 @@ const timeOut = () =>{
 
 export default class StepSevenPage extends React.Component {
     render() {
-        const help = StorageHelper.getSteps();
-    console.log("help------>"+help)
         return (
             <div className="step-5 page">
                 <div className="videoPlayer">

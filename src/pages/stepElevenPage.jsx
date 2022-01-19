@@ -17,7 +17,7 @@ const error = () => {
 };
 
 function isUserRegistered() {
-    // return localStorage.getItem("submit");
+    return localStorage.getItem("submit");
 }
 
 const StepElevenPage = ()=> {

@@ -1,5 +1,5 @@
 export default class StorageHelper {
-
+    
     static addStep(current) {
         let steps = this.getSteps();
         if(steps) {

@@ -10,11 +10,6 @@ import StorageHelper from "../helper/storageHelper";
 export default class StepTwoPage extends React.Component {
     render() {
         const { location, history } = this.props
-        // let stepCurrent = location.pathname.match(/\d+$/)[0];
-        // let stepPrv = lastLocation.pathname.match(/\d+$/)[0];
-        // console.log(stepCurrent,stepPrv+ "here")
-        const help = StorageHelper.getSteps();
-    console.log("help------>"+help)
         return (
             <div className="step-2 page">
                 <Link to="/step3">
