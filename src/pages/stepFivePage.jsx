@@ -25,17 +25,17 @@ export default class StepFivePage extends React.Component {
                 </div>
                     <div className="buttons">
                         <Link to="/step6">
-                    
-                        <button className="next-button green" onClick={() => StorageHelper.addStep("1")}>
+
+                        <button className="next-button green" onClick={() => StorageHelper.addStep(5,1)}>
                             <img className="agree" src={like} alt=" "/>
                             خیلی خوب بود
                         </button>
-                        <button className="next-button red" onClick={() => StorageHelper.addStep("0")}>
+                        <button className="next-button red" onClick={() => StorageHelper.addStep(5,0)}>
                             {" "}
                             <img className="disagree" src={like} alt=" "/>
                             دوسش نداشتم
                         </button>
-                    
+
                         </Link>
                 </div>
                 {/* </div> */}

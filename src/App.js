@@ -19,6 +19,7 @@ import { LastLocationProvider, withLastLocation,
     WithLastLocationProps
   } from "react-router-last-location";
 import { getNumberFromEndStrings } from "./utils/functionsStrings";
+import StorageHelper from "./helper/storageHelper";
 
 // const styleRoute = {
 //     '1-to-2' : 'bg-red-100',
@@ -54,7 +55,7 @@ class App extends Component  {
         const {location} = this.props;
         const currentKey = location.pathname.split("/")[1] || "/";
         const timeout = {enter: 600, exit: 600};
-        
+
         let stepCurrent = getNumberFromEndStrings(location.pathname)
         console.log(stepCurrent)
         // let stepPrv = lastLocation.pathname.match(/\d+$/)[0];

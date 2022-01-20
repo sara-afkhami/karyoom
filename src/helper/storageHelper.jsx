@@ -1,15 +1,15 @@
 export default class StorageHelper {
-    
-    static addStep(current) {
-        let steps = this.getSteps();
-        if(steps) {
-            localStorage.setItem("STEPS", steps + current)
-        } else {
-            localStorage.setItem("STEPS", current)
+
+    static addStep(step, current) {
+        let status = JSON.parse(localStorage.getItem("STEPS"));
+        if (!status) {
+            status = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
         }
+        status[step] = current;
+        localStorage.setItem("STEPS", JSON.stringify(status));
     }
 
     static getSteps() {
-        return localStorage.getItem("STEPS");
+        return JSON.parse(localStorage.getItem("STEPS"));
     }
 }

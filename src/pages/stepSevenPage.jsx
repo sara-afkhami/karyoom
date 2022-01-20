@@ -2,7 +2,6 @@ import React from "react";
 import ReactPlayer from "react-player";
 import {Link} from "react-router-dom";
 import like from "../assets/images/icon/like.png";
-import StorageHelper from "../helper/storageHelper";
 import profile from "../assets/images/icon/profile.png"
 
 const timeOut = () =>{

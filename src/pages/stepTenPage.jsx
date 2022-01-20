@@ -9,11 +9,11 @@ export default class StepTenPage extends React.Component {
             <div className="step-10 page">
                 <Link to="/step11">
                     <div className="buttons">
-                    <button className="next-button green" onClick={() => StorageHelper.addStep("1")}>
+                    <button className="next-button green" onClick={() => StorageHelper.addStep(10,1)}>
                         <img className="agree" src={like} alt=" "/>
                         موافقم
                     </button>
-                    <button className="next-button red" onClick={() => StorageHelper.addStep("0")}>
+                    <button className="next-button red" onClick={() => StorageHelper.addStep(10,0)}>
                         {" "}
                         <img className="disagree" src={like} alt=" "/>
                         مخالفم، دقیق میدونم
