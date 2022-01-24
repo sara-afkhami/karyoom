@@ -362,7 +362,7 @@ html {
 .step-7 {
     height: 100vh;
     width: auto;
-    background: #e8e8e8 url("assets/images/stepSixBackground.jpg") no-repeat center;
+    background: #e8e8e8 url("assets/images/stepSixBackground.jpg") no-repeat left;
     background-size: auto 100%;
     overflow-x: hidden;
 }
@@ -376,7 +376,7 @@ html {
 .step-8 {
     height: 100vh;
     /* width: auto; */
-    background: #e8e8e8 url("assets/images/stepSevenBackground.jpg") no-repeat center;
+    background: #e8e8e8 url("assets/images/stepSevenBackground.jpg") no-repeat right;
     background-size: auto 100%;
     overflow-x: hidden;
 }
@@ -400,7 +400,7 @@ html {
 .step-9 {
     height: 100vh;
     width: auto;
-    background: #e8e8e8 url("assets/images/stepEightBackground.jpg") no-repeat center;
+    background: #e8e8e8 url("assets/images/stepEightBackground.jpg") no-repeat left;
     background-size: auto 100%;
     overflow-x: hidden;
 }
@@ -424,7 +424,7 @@ html {
 .step-10 {
     height: 100vh;
     width: auto;
-    background: #e8e8e8 url("assets/images/stepNineBackground.jpg") no-repeat center;
+    background: #e8e8e8 url("assets/images/stepNineBackground.jpg") no-repeat right;
     background-size: auto 100%;
     overflow-x: hidden;
 }
@@ -483,7 +483,7 @@ html {
 .step-11 {
     height: 100vh;
     width: auto;
-    background: #e8e8e8 url("assets/images/stepTenBackground.jpg") no-repeat center;
+    background: #e8e8e8 url("assets/images/stepTenBackground.jpg") no-repeat left;
     background-size: auto 100%;
     overflow-x: hidden;
     position: relative;
